@@ -49,7 +49,7 @@
 - Navegação entre telas em pilha
 - Armazenamento local das refeições
 
-Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos como:
+Fixando conhecimentos nos conceitos:
 
 - Estados
 - Imutabilidade do estado
