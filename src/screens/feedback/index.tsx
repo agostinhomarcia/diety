@@ -3,8 +3,8 @@ import { Container, Content, IllustrationImage, Title } from "./styles";
 
 import { Button } from "@components/Button";
 
-import illustrationHappy from "@assets/Illustration-happy.png";
-import illustrationSad from "@assets/Illustration-sad.png";
+import Happy from "@assets/Illustration-happy.png";
+import Sad from "@assets/Illustration-sad.png";
 
 import { useNavigation, useRoute } from "@react-navigation/native";
 
@@ -35,7 +35,7 @@ export function Feedback() {
             {} Muito bem!
           </Title>
 
-          <IllustrationImage source={illustrationHappy} />
+          <IllustrationImage source={Happy} />
         </Content>
       ) : (
         <Content>
@@ -52,7 +52,7 @@ export function Feedback() {
             {} dessa vez, mas continue se esforçando e não desista!
           </Title>
 
-          <IllustrationImage source={illustrationSad} />
+          <IllustrationImage source={Sad} />
         </Content>
       )}
 
