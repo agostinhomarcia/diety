@@ -1,67 +1,106 @@
-# Ignite Teams
+<p align="center">
+   <img src="https://media.giphy.com/media/jnWLy77dtT7WVitiYV/giphy.gif" alt="cart" width="280"/>
+</p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/mathzsl/daily-diet-app?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/mathzsl/daily-diet-app?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/mathzsl/daily-diet-app?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/mathzsl/daily-diet-app?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/mathzsl/daily-diet-app?style=for-the-badge)
+<p align="right">
+   <img src="https://media.giphy.com/media/jLCDNZDYO1cdRadnlJ/giphy.gif" alt="cart" width="130"/>
+</p>
 
-<div align="center" >
-  <img src="./.github/assets/play1.gif" alt="demo1-mobile" height="425">
-  <img src="./.github/assets/play2.gif" alt="demo2-mobile" height="425">
-</div>
+<h1 align="center"></h1>
 
-> O Daily Diet é uma aplicação móvel desenvolvida em React Native. Ele consiste em uma aplicação de monitoramento de dieta, onde o usuário cadastra todas as suas refeições e aplicação informa como está o andamento da dieta dele.
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/agostinhomarcia/diety?color=4266f5">
 
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/agostinhomarcia/diety?color=4266f5">
 
-## 🛠️ Nesse projeto foi utilizado:
+  <img alt="License" src="https://img.shields.io/github/license/agostinhomarcia/diety?color=4266f5">
 
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Expo](https://expo.dev/)
-- [Lucide ](https://lucide.dev/)
-- [Styled Components](https://styled-components.com/)
-- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/usage/)
+   <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/diety?color=4266f5" />
 
-## 💻 Pré-requisitos
+   <img alt="Github forks" src="https://img.shields.io/github/forks/agostinhomarcia/diety?color=4266f5" />
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+   <img alt="Github stars" src="https://img.shields.io/github/stars/agostinhomarcia/diety?color=4266f5" /> 
+</p>
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/agostinhomarcia" target="_blank">Author</a>&#xa0; | &#xa0
+  <a href="#" target="_blank" rel="noopener noreferrer">Projeto</a>
+</p>
+
+<br>
+
+## :dart: About
+
+<h4 align="center"> Diety </h4>
+
+<p align="center">
+   Nesse desafio, você vai desenvolver uma aplicação de cadastro de refeições, que contém as seguintes funcionalidades:
+
+- Adicionar uma nova refeição
+- Editar uma refeição
+- Remover uma refeição da listagem
+- Mostrar as estatísticas do progresso da dieta
+- Navegação entre telas em pilha
+- Armazenamento local das refeições
+
+Apesar de serem poucas funcionalidades, você vai precisar relembrar conceitos como:
+
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no React Native
+- Propriedades
+- Componentização
+- Parâmetros de navegação</p>
+</p>
+
+## :sparkles: Features
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [React-Native](https://reactnative.dev/docs/getting-started)
+- [TypeScript](https://www.w3schools.com/typescript/)
+- [Styled-components](https://styled-components.com/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting
 
 ```bash
-# Clone este repositório
-$ git clone git@github.com:mathzsl/daily-diet-app.git
-# Acesse a pasta do projeto no terminal/cmd
-$ cd daily-diet-app
-# Instale as dependências
-$ yarn
-# ou
-$ npm install
-# Execute a aplicação em modo de desenvolvimento
-$ yarn start
-# ou
-$ npm start
+# Clone this project
+$ git clone https://github.com/agostinhomarcia/diety.git
+# Access
+$ cd diety
+# Install dependencies
+$ yarn or npm install
+# Run the project
+$ yarn start or npm start
+# The server will initialize in the <http://localhost:3000>
 ```
 
-## 🔖 Contribuindo para Daily diet
+## :memo: License
 
-As contribuições são o que torna a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer serão muito bem apreciadas.
+This project is under the [MIT license](./License).
 
-Para contribuir com o projeto TodoLisr, siga estas etapas:
+Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
 
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
-5. Crie a solicitação de pull.
+<p align="center">
+   <img src="https://media.giphy.com/media/rDypnRtIZkFromSGqF/giphy.gif" alt="diety" width="450"/>
+</p>
 
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+&#xa0;
 
-## 📫 Contate-me
-
-Se desejar entrar em contato, sinta-se à vontade para se conectar comigo:
-
-- Email: maths.soares99@gmail.com
-- LinkedIn: [Matheus Soares](https://www.linkedin.com/in/mathzsl/)
-- Twitter: [@mathz3g](https://twitter.com/mathz3g)
+<a href="#top">Back to top </a>
