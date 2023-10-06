@@ -40,7 +40,7 @@
 <h4 align="center"> Diety </h4>
 
 <p align="center">
-   Nesse desafio, você vai desenvolver uma aplicação de cadastro de refeições, que contém as seguintes funcionalidades:
+   Desenvolver uma aplicação de cadastro de refeições, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova refeição
 - Editar uma refeição
