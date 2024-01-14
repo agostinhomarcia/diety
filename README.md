@@ -39,8 +39,8 @@
 
 <h4 align="center"> Diety </h4>
 
-<p align="center">
-   Desenvolver uma aplicação de cadastro de refeições, que contém as seguintes funcionalidades:
+<p align="left">
+Esse aplicativo consiste em um cadastro de refeições, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova refeição
 - Editar uma refeição
@@ -49,15 +49,20 @@
 - Navegação entre telas em pilha
 - Armazenamento local das refeições
 
-Fixando conhecimentos nos conceitos:
-
-- Estados
-- Imutabilidade do estado
-- Listas e chaves no React Native
-- Propriedades
-- Componentização
-- Parâmetros de navegação</p>
 </p>
+</p>
+<hr>
+
+##### Conheça o Projeto
+
+<p align="center">
+   <img src="./assets/vid1.gif" alt="todo" width="300"/>
+</p>
+
+<p align="center">
+   <img src="./assets/vid2.gif" alt="todo" width="300"/>
+</p>
+<hr>
 
 ## :sparkles: Features
 

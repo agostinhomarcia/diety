@@ -35,7 +35,7 @@ export function MealDetails() {
     try {
       await deleteMealById(meal.id);
       navigation.navigate("home");
-      Alert.alert("Deletar refeição", "Refeição removida com sucesso. =)");
+      Alert.alert("Deletar refeição", "Refeição removida com sucesso. 🤗");
     } catch (error) {
       console.log(error);
       Alert.alert(

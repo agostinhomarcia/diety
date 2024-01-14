@@ -21,7 +21,7 @@ export const TextAreaContainer = styled.View`
 `;
 
 export const TextArea = styled.TextInput.attrs(({ theme }) => ({
-  placeholderTextColor: theme.colors.gray_6,
+  placeholderTextColor: theme.colors.gray_3,
   multiline: true,
   numberOfLines: 5,
   textAlignVertical: "top",

@@ -11,7 +11,7 @@ export const TextInput = styled(Input).attrs(({ theme }) => ({
   margin-bottom: 24px;
 
   ${({ theme }) => css`
-    border: 1px solid ${theme.colors.gray_6};
+    border: 1px solid ${theme.colors.gray_3};
     color: ${theme.colors.gray_7};
   `}
 `;
