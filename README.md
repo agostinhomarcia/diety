@@ -56,11 +56,11 @@ Esse aplicativo consiste em um cadastro de refeições, que contém as seguintes
 ##### Conheça o Projeto
 
 <p align="center">
-   <img src="./assets/vid1.gif" alt="todo" width="300"/>
+   <img src="./assets/vid2.gif" alt="todo" width="300"/>
 </p>
 
 <p align="center">
-   <img src="./assets/vid2.gif" alt="todo" width="300"/>
+   <img src="./assets/vid1.gif" alt="todo" width="300"/>
 </p>
 <hr>
 
