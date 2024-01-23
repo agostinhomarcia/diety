@@ -17,9 +17,7 @@
 
    <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/diety?color=4266f5" />
 
-   <img alt="Github forks" src="https://img.shields.io/github/forks/agostinhomarcia/diety?color=4266f5" />
 
-   <img alt="Github stars" src="https://img.shields.io/github/stars/agostinhomarcia/diety?color=4266f5" /> 
 </p>
 
 <p align="center">
