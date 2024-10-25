@@ -11,6 +11,7 @@ type StyledProps = {
 
 export const Container = styled.ScrollView`
   flex: 1;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Header = styled.View<StyledProps>`

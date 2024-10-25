@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { Alert, View } from "react-native";
+import React, { useState } from "react";
+import { Alert, TouchableOpacity, View } from "react-native";
+import DateTimePicker from "@react-native-community/datetimepicker";
 
 import {
   Content,
@@ -30,6 +31,16 @@ export function NewMeal() {
   const [date, setDate] = useState("");
   const [hour, setHour] = useState("");
   const [isOnTheDiet, setIsOnTheDiet] = useState(true);
+
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  function onDateChange(event: any, selectedDate?: Date) {
+    setShowDatePicker(false);
+    if (selectedDate) {
+      const currentDate = selectedDate || new Date();
+      const formattedDate = currentDate.toLocaleDateString("pt-BR");
+      setDate(formattedDate);
+    }
+  }
 
   async function handleRegisterNewMeal() {
     try {
@@ -92,20 +103,29 @@ export function NewMeal() {
         <DateBox>
           <View style={{ flex: 1 }}>
             <Label title="Data" />
-            <Input
-              placeholder="DD/MM/YYYY"
-              value={date}
-              maxLength={10}
-              keyboardType="numeric"
-              onChangeText={(date) => setDate(dateMask(date))}
-              style={{ flex: 1 }}
-            />
+            <TouchableOpacity onPress={() => setShowDatePicker(true)}>
+              <Input
+                placeholder="Selecione a data"
+                placeholderTextColor="#ffff"
+                value={date}
+                editable={false}
+              />
+            </TouchableOpacity>
+            {showDatePicker && (
+              <DateTimePicker
+                value={new Date()}
+                mode="date"
+                display="default"
+                onChange={onDateChange}
+              />
+            )}
           </View>
 
           <View style={{ flex: 1 }}>
             <Label title="Hora" />
             <Input
               placeholder="hh:mm"
+              placeholderTextColor="#ffff"
               value={hour}
               maxLength={5}
               onChangeText={(hour) => setHour(hourMask(hour))}

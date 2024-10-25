@@ -17,11 +17,15 @@ export const Container = styled(TouchableOpacity)<StyledProps>`
   background-color: ${({ theme }) => theme.colors.gray_6};
 
   ${({ theme, variant }) =>
-    variant === "secondary" &&
-    css`
-      background-color: transparent;
-      border:1px solid ${theme.colors.gray_7};
-    `}
+    variant === "primary"
+      ? css`
+          background-color: ${theme.colors.gray_6};
+          border: 1px solid ${theme.colors.white};
+        `
+      : css`
+          background-color: transparent;
+          border: 1px solid ${theme.colors.white};
+        `}
 
   flex-direction: row;
   align-items: center;
