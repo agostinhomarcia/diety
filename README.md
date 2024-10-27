@@ -17,7 +17,6 @@
 
    <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/diety?color=4266f5" />
 
-
 </p>
 
 <p align="center">
@@ -49,6 +48,30 @@ Esse aplicativo consiste em um cadastro de refeições, que contém as seguintes
 
 </p>
 </p>
+
+Confira o que o app oferece:
+
+1️⃣ Cadastro Rápido e Fácil de Refeições
+Registre nome, descrição, data e hora de cada refeição. Indique se está "dentro" ou "fora da dieta" e tenha a liberdade de editar ou excluir conforme precisar.
+
+2️⃣ Estatísticas Personalizadas para Motivação 📊
+Acompanhe o percentual de refeições dentro da dieta, total de refeições e a sequência de dias com hábitos saudáveis, mantendo sua motivação em alta.
+
+3️⃣ Acesso Offline e Armazenamento Local 📥
+Com todas as refeições armazenadas diretamente no dispositivo, o app funciona 100% offline. Ideal para manter o controle onde quer que você esteja!
+
+4️⃣ Navegação Intuitiva para uma Experiência Fluida 🧭
+Interface simples e intuitiva, facilitando a alternância entre a tela inicial, histórico de refeições e estatísticas.
+
+#### Tecnologias:
+
+⚛️ React Native e Expo
+🔌 Integração com Módulos Nativos.
+⚙️ DateTimePicker - Facilita a seleção precisa de datas e horários.
+🛠️ Máscaras de Entrada.
+🔑 UUID - Gera identificadores únicos para cada refeição, mantendo dados organizados e consistentes.
+🎨 Styled Components.
+
 <hr>
 
 ##### Conheça o Projeto
