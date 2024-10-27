@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Alert, TouchableOpacity, View } from "react-native";
-import DateTimePicker from "@react-native-community/datetimepicker";
+import DateTimePicker, {
+  DateTimePickerEvent,
+} from "@react-native-community/datetimepicker";
 
 import {
   Content,
@@ -22,6 +24,15 @@ import { createMeal } from "@storage/meals/createMeal";
 
 import { useNavigation } from "@react-navigation/native";
 import { dateMask, hourMask } from "@utils/inputMask";
+import theme from "@theme/index";
+
+interface DateChangeHandler {
+  (event: DateTimePickerEvent, selectedDate: Date | undefined): void;
+}
+
+interface TimeChangeHandler {
+  (event: DateTimePickerEvent, selectedTime: Date | undefined): void;
+}
 
 export function NewMeal() {
   const navigation = useNavigation();
@@ -32,19 +43,35 @@ export function NewMeal() {
   const [hour, setHour] = useState("");
   const [isOnTheDiet, setIsOnTheDiet] = useState(true);
 
+  // Estados para controlar a exibição dos pickers
   const [showDatePicker, setShowDatePicker] = useState(false);
-  function onDateChange(event: any, selectedDate?: Date) {
+  const [showTimePicker, setShowTimePicker] = useState(false);
+
+  // Função para lidar com a mudança de data
+  const onDateChange: DateChangeHandler = (event, selectedDate) => {
     setShowDatePicker(false);
     if (selectedDate) {
-      const currentDate = selectedDate || new Date();
-      const formattedDate = currentDate.toLocaleDateString("pt-BR");
+      const formattedDate = dateMask(selectedDate.toLocaleDateString("pt-BR"));
       setDate(formattedDate);
     }
-  }
+  };
+
+  const onTimeChange: TimeChangeHandler = (event, selectedTime) => {
+    setShowTimePicker(false);
+    if (selectedTime) {
+      const formattedHour = hourMask(
+        `${selectedTime.getHours().toString().padStart(2, "0")}:${selectedTime
+          .getMinutes()
+          .toString()
+          .padStart(2, "0")}`
+      );
+      setHour(formattedHour);
+    }
+  };
 
   async function handleRegisterNewMeal() {
     try {
-      if (!name.trim() && !date.trim() && !hour.trim()) {
+      if (!name.trim() || !date.trim() || !hour.trim()) {
         return Alert.alert(
           "Nova refeição",
           "Por favor, preencha todos os campos."
@@ -91,13 +118,19 @@ export function NewMeal() {
         <Label title="Nome" />
         <Input
           placeholder="Digite o nome da refeição"
+          placeholderTextColor={theme.colors.gray_3}
           value={name}
           onChangeText={setName}
         />
 
         <Label title="Descrição" />
         <TextAreaContainer>
-          <TextArea value={description} onChangeText={setDescription} />
+          <TextArea
+            placeholder="Descrição da refeição"
+            placeholderTextColor={theme.colors.gray_3}
+            value={description}
+            onChangeText={setDescription}
+          />
         </TextAreaContainer>
 
         <DateBox>
@@ -106,7 +139,7 @@ export function NewMeal() {
             <TouchableOpacity onPress={() => setShowDatePicker(true)}>
               <Input
                 placeholder="Selecione a data"
-                placeholderTextColor="#ffff"
+                placeholderTextColor={theme.colors.gray_3}
                 value={date}
                 editable={false}
               />
@@ -123,15 +156,22 @@ export function NewMeal() {
 
           <View style={{ flex: 1 }}>
             <Label title="Hora" />
-            <Input
-              placeholder="hh:mm"
-              placeholderTextColor="#ffff"
-              value={hour}
-              maxLength={5}
-              onChangeText={(hour) => setHour(hourMask(hour))}
-              style={{ flex: 1 }}
-              keyboardType="numeric"
-            />
+            <TouchableOpacity onPress={() => setShowTimePicker(true)}>
+              <Input
+                placeholder="Selecione a hora"
+                placeholderTextColor={theme.colors.gray_3}
+                value={hour}
+                editable={false}
+              />
+            </TouchableOpacity>
+            {showTimePicker && (
+              <DateTimePicker
+                value={new Date()}
+                mode="time"
+                display="default"
+                onChange={onTimeChange}
+              />
+            )}
           </View>
         </DateBox>
 
