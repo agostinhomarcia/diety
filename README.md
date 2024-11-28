@@ -6,85 +6,122 @@
    <img src="https://media.giphy.com/media/jLCDNZDYO1cdRadnlJ/giphy.gif" alt="cart" width="130"/>
 </p>
 
-<h1 align="center">Diety</h1>
+<h1 align="center"></h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/agostinhomarcia/diety?color=4266f5">
+
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/agostinhomarcia/diety?color=4266f5">
+
   <img alt="License" src="https://img.shields.io/github/license/agostinhomarcia/diety?color=4266f5">
-  <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/diety?color=4266f5" />
+
+   <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/diety?color=4266f5" />
+
 </p>
 
 <p align="center">
-  <a href="#about">About</a> &#xa0; | &#xa0; 
-  <a href="#features">Features</a> &#xa0; | &#xa0;
-  <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/agostinhomarcia" target="_blank">Author</a> &#xa0; | &#xa0;
-  <a href="#" target="_blank" rel="noopener noreferrer">Project</a>
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/agostinhomarcia" target="_blank">Author</a>&#xa0; | &#xa0
+  <a href="#" target="_blank" rel="noopener noreferrer">Projeto</a>
 </p>
 
 <br>
 
-## About
+## :dart: About
 
-Diety é um aplicativo inovador para o gerenciamento de refeições, oferecendo uma experiência completa e intuitiva para o usuário. Com ele, você pode:
+<h4 align="center"> Diety </h4>
 
-- Adicionar, editar e remover refeições facilmente.
-- Acompanhar estatísticas detalhadas sobre sua dieta.
-- Navegar entre diferentes telas de forma fluida.
-- Armazenar dados localmente para acesso offline.
+<p align="left">
+Esse aplicativo consiste em um cadastro de refeições, que contém as seguintes funcionalidades:
 
-## Features
+- Adicionar uma nova refeição
+- Editar uma refeição
+- Remover uma refeição da listagem
+- Mostrar as estatísticas do progresso da dieta
+- Navegação entre telas em pilha
+- Armazenamento local das refeições
 
-- **Cadastro de Refeições**: Registre rapidamente suas refeições com detalhes como nome, descrição, data e hora.
-- **Estatísticas Personalizadas**: Monitore seu progresso com gráficos e dados motivacionais.
-- **Acesso Offline**: Mantenha o controle de suas refeições mesmo sem conexão à internet.
-- **Navegação Intuitiva**: Interface amigável que facilita a transição entre diferentes seções do aplicativo.
+</p>
+</p>
 
-## Technologies
+Confira o que o app oferece:
 
-Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+1️⃣ Cadastro Rápido e Fácil de Refeições
+Registre nome, descrição, data e hora de cada refeição. Indique se está "dentro" ou "fora da dieta" e tenha a liberdade de editar ou excluir conforme precisar.
 
-- [React Native](https://reactnative.dev/docs/getting-started)
-- [TypeScript](https://www.typescriptlang.org/)
+2️⃣ Estatísticas Personalizadas para Motivação 📊
+Acompanhe o percentual de refeições dentro da dieta, total de refeições e a sequência de dias com hábitos saudáveis, mantendo sua motivação em alta.
+
+3️⃣ Acesso Offline e Armazenamento Local 📥
+Com todas as refeições armazenadas diretamente no dispositivo, o app funciona 100% offline. Ideal para manter o controle onde quer que você esteja!
+
+4️⃣ Navegação Intuitiva para uma Experiência Fluida 🧭
+Interface simples e intuitiva, facilitando a alternância entre a tela inicial, histórico de refeições e estatísticas.
+
+#### Tecnologias:
+
+⚛️ React Native e Expo
+🔌 Integração com Módulos Nativos.
+⚙️ DateTimePicker - Facilita a seleção precisa de datas e horários.
+🛠️ Máscaras de Entrada.
+🔑 UUID - Gera identificadores únicos para cada refeição, mantendo dados organizados e consistentes.
+🎨 Styled Components.
+
+<hr>
+
+##### Conheça o Projeto
+
+<p align="center">
+   <img src="./assets/vid2.gif" alt="todo" width="300"/>
+</p>
+
+<p align="center">
+   <img src="./assets/vid1.gif" alt="todo" width="300"/>
+</p>
+<hr>
+
+## :sparkles: Features
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [React-Native](https://reactnative.dev/docs/getting-started)
+- [TypeScript](https://www.w3schools.com/typescript/)
 - [Styled-components](https://styled-components.com/)
 
-## Requirements
+## :white_check_mark: Requirements
 
-Antes de começar, certifique-se de ter o [Git](https://git-scm.com) e o [Node.js](https://nodejs.org/en/) instalados em seu sistema.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-## Starting
-
-Para iniciar o projeto, siga os passos abaixo:
+## :checkered_flag: Starting
 
 ```bash
-# Clone este repositório
+# Clone this project
 $ git clone https://github.com/agostinhomarcia/diety.git
-
-# Acesse o diretório do projeto
+# Access
 $ cd diety
-
-# Instale as dependências
-$ yarn install
-# ou
-$ npm install
-
-# Inicie o projeto
-$ yarn start
-# ou
-$ npm start
-
-# O servidor será inicializado em <http://localhost:3000>
+# Install dependencies
+$ yarn or npm install
+# Run the project
+$ yarn start or npm start
+# The server will initialize in the <http://localhost:3000>
 ```
 
-## License
+## :memo: License
 
-Este projeto está sob a licença [MIT](./LICENSE).
+This project is under the [MIT license](./License).
 
-Desenvolvido com ❤️ por [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
+Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
 
 <p align="center">
    <img src="https://media.giphy.com/media/rDypnRtIZkFromSGqF/giphy.gif" alt="diety" width="450"/>
@@ -92,4 +129,4 @@ Desenvolvido com ❤️ por [Márcia Agostinho](https://github.com/agostinhomarc
 
 &#xa0;
 
-<a href="#top">Back to top</a>
+<a href="#top">Back to top </a>
