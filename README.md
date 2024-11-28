@@ -98,6 +98,7 @@ The following tools were used in this project:
 - [React-Native](https://reactnative.dev/docs/getting-started)
 - [TypeScript](https://www.w3schools.com/typescript/)
 - [Styled-components](https://styled-components.com/)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/docs/install/) para armazenamento local de dados
 
 ## :white_check_mark: Requirements
 
@@ -114,7 +115,7 @@ $ cd diety
 $ yarn or npm install
 # Run the project
 $ yarn start or npm start
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <exp://192.168.45.142:8081>
 ```
 
 ## :memo: License
